@@ -1,0 +1,1316 @@
+/* =====================================================
+   GENERAL
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: "Inter", sans-serif;
+
+    color: #1d2b21;
+
+    background: #ffffff;
+
+    line-height: 1.6;
+
+}
+
+
+.container {
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    background: rgba(255,255,255,0.97);
+
+    z-index: 1000;
+
+    border-bottom: 1px solid #e5eee7;
+
+}
+
+
+.nav-container {
+
+    height: 78px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+/* LOGO */
+
+.logo-area {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+
+    color: #174d2a;
+
+}
+
+
+.logo-area img {
+
+    width: 50px;
+
+    height: 50px;
+
+    object-fit: contain;
+
+}
+
+
+.logo-text h3 {
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+}
+
+
+.logo-text span {
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    color: #607264;
+
+}
+
+
+/* NAVIGATION */
+
+nav {
+
+    display: flex;
+
+    gap: 25px;
+
+}
+
+
+nav a {
+
+    color: #263b2c;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+
+nav a:hover {
+
+    color: #287a43;
+
+}
+
+
+/* MOBILE MENU */
+
+.menu-btn {
+
+    display: none;
+
+    border: none;
+
+    background: none;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+
+    min-height: 720px;
+
+    margin-top: 78px;
+
+    background-image:
+        url("images/image1.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(10,48,24,0.67);
+
+}
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    color: white;
+
+    max-width: 850px;
+
+}
+
+
+.hero-small {
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+
+    font-weight: 600;
+
+}
+
+
+.hero h1 {
+
+    font-size: clamp(40px,6vw,70px);
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+
+}
+
+
+.hero-description {
+
+    max-width: 650px;
+
+    font-size: 17px;
+
+    margin-bottom: 35px;
+
+    opacity: 0.92;
+
+}
+
+
+/* HERO BUTTONS */
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.btn {
+
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    border-radius: 4px;
+
+    transition: 0.3s;
+
+}
+
+
+.btn-primary {
+
+    background: #6bbf59;
+
+    color: white;
+
+}
+
+
+.btn-primary:hover {
+
+    background: #55a746;
+
+}
+
+
+.btn-outline {
+
+    border: 1px solid white;
+
+    color: white;
+
+}
+
+
+.btn-outline:hover {
+
+    background: white;
+
+    color: #174d2a;
+
+}
+
+
+/* =====================================================
+   SECTIONS
+===================================================== */
+
+.section {
+
+    padding: 100px 0;
+
+}
+
+
+.section-heading {
+
+    margin-bottom: 55px;
+
+}
+
+
+.section-heading span,
+.contact-intro span {
+
+    color: #3b8d50;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    font-weight: 800;
+
+}
+
+
+.section-heading h2,
+.contact-intro h2 {
+
+    font-size: 40px;
+
+    line-height: 1.2;
+
+    margin-top: 10px;
+
+    color: #173c25;
+
+}
+
+
+.center {
+
+    text-align: center;
+
+}
+
+
+.center p {
+
+    margin-top: 10px;
+
+    color: #657568;
+
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about {
+
+    background: #f7faf7;
+
+}
+
+
+.about-content {
+
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+.about-text p {
+
+    color: #56665a;
+
+    margin-bottom: 20px;
+
+}
+
+
+.about-info {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+}
+
+
+.info-card {
+
+    background: white;
+
+    padding: 25px;
+
+    border: 1px solid #e0e9e1;
+
+    border-radius: 6px;
+
+}
+
+
+.info-card span {
+
+    display: block;
+
+    color: #718074;
+
+    font-size: 12px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.info-card strong {
+
+    color: #1e5c32;
+
+    font-size: 17px;
+
+}
+
+
+/* =====================================================
+   PRODUCTS
+===================================================== */
+
+.products {
+
+    background: white;
+
+}
+
+
+.product-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.product-card {
+
+    padding: 30px;
+
+    border: 1px solid #dfe9e1;
+
+    border-radius: 7px;
+
+    transition: 0.3s;
+
+    background: white;
+
+}
+
+
+.product-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 35px rgba(25,70,35,0.1);
+
+}
+
+
+.product-number {
+
+    color: #65a855;
+
+    font-weight: 800;
+
+    font-size: 13px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.product-card h3 {
+
+    color: #1c5630;
+
+    margin-bottom: 10px;
+
+}
+
+
+.product-card p {
+
+    color: #6a776d;
+
+    font-size: 14px;
+
+    min-height: 45px;
+
+}
+
+
+.product-card a {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    color: #2d7b43;
+
+    font-weight: 700;
+
+    font-size: 13px;
+
+    text-decoration: none;
+
+}
+
+
+.product-card a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+.future-product {
+
+    background: #f4f8f4;
+
+}
+
+
+/* =====================================================
+   WHY CHOOSE US
+===================================================== */
+
+.why-us {
+
+    background: #eef6ef;
+
+}
+
+
+.why-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.why-card {
+
+    background: white;
+
+    padding: 35px 25px;
+
+    border-radius: 7px;
+
+}
+
+
+.why-icon {
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.why-card h3 {
+
+    color: #205c34;
+
+    margin-bottom: 10px;
+
+}
+
+
+.why-card p {
+
+    color: #68766c;
+
+    font-size: 14px;
+
+}
+
+
+/* =====================================================
+   GALLERY
+===================================================== */
+
+.gallery {
+
+    background: white;
+
+}
+
+
+.gallery-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.gallery-item {
+
+    height: 260px;
+
+    overflow: hidden;
+
+    border-radius: 6px;
+
+    background: #edf3ee;
+
+}
+
+
+.gallery-item img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.4s;
+
+    cursor: pointer;
+
+}
+
+
+.gallery-item:hover img {
+
+    transform: scale(1.06);
+
+}
+
+
+/* =====================================================
+   DIRECTORS
+===================================================== */
+
+.directors {
+
+    background: #f7faf7;
+
+}
+
+
+.directors-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.director-card {
+
+    background: white;
+
+    border: 1px solid #e0e9e1;
+
+    padding: 30px;
+
+    border-radius: 6px;
+
+}
+
+
+.director-number {
+
+    color: #68a956;
+
+    font-weight: 800;
+
+    font-size: 13px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.director-card h3 {
+
+    font-size: 16px;
+
+    color: #1d5230;
+
+}
+
+
+.director-card p {
+
+    margin-top: 5px;
+
+    color: #758078;
+
+    font-size: 13px;
+
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact {
+
+    background: #153d23;
+
+    color: white;
+
+}
+
+
+.contact-wrapper {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+}
+
+
+.contact-intro h2 {
+
+    color: white;
+
+}
+
+
+.contact-intro p {
+
+    margin-top: 20px;
+
+    max-width: 500px;
+
+    color: #cbd8ce;
+
+}
+
+
+.contact-details {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+}
+
+
+.contact-item {
+
+    display: flex;
+
+    gap: 15px;
+
+}
+
+
+.contact-item > span {
+
+    font-size: 22px;
+
+}
+
+
+.contact-item small {
+
+    display: block;
+
+    color: #9db3a2;
+
+    font-size: 11px;
+
+    margin-bottom: 3px;
+
+}
+
+
+.contact-item a,
+.contact-item p {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+}
+
+
+.contact-item a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    background: #0e2918;
+
+    color: white;
+
+    padding-top: 40px;
+
+}
+
+
+.footer-content {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding-bottom: 30px;
+
+}
+
+
+.footer-content h3 {
+
+    font-size: 15px;
+
+}
+
+
+.footer-content p {
+
+    font-size: 10px;
+
+    color: #9fb0a2;
+
+    letter-spacing: 1px;
+
+}
+
+
+.footer-links {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.footer-links a {
+
+    color: #c5d2c8;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+}
+
+
+.footer-links a:hover {
+
+    color: white;
+
+}
+
+
+.copyright {
+
+    text-align: center;
+
+    border-top: 1px solid #274630;
+
+    padding: 20px;
+
+    color: #91a195;
+
+    font-size: 11px;
+
+}
+
+
+/* =====================================================
+   FLOATING WHATSAPP
+===================================================== */
+
+.whatsapp {
+
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 25px;
+
+    width: 55px;
+
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #25d366;
+
+    color: white;
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    font-size: 25px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.2);
+
+    z-index: 999;
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+
+    nav {
+
+        position: absolute;
+
+        top: 78px;
+
+        left: 0;
+
+        width: 100%;
+
+        background: white;
+
+        display: none;
+
+        flex-direction: column;
+
+        padding: 20px 5%;
+
+        border-top: 1px solid #eee;
+
+    }
+
+
+    nav.active {
+
+        display: flex;
+
+    }
+
+
+    .menu-btn {
+
+        display: block;
+
+    }
+
+
+    .about-content,
+    .contact-wrapper {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .product-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .why-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .directors-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+
+    .hero {
+
+        min-height: 620px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .hero-description {
+
+        font-size: 15px;
+
+    }
+
+
+    .section {
+
+        padding: 70px 0;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .about-info {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .product-grid,
+    .why-grid,
+    .gallery-grid,
+    .directors-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .gallery-item {
+
+        height: 250px;
+
+    }
+
+
+    .footer-content {
+
+        flex-direction: column;
+
+    }
+
+
+    .logo-text h3 {
+
+        font-size: 12px;
+
+    }
+
+
+    .logo-text span {
+
+        font-size: 7px;
+
+    }
+
+}
+/* =====================================================
+   FULL-SCREEN IMAGE VIEWER
+===================================================== */
+
+.image-viewer {
+
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.95);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 0.3s;
+
+    z-index: 9999;
+
+}
+
+
+/* Show viewer */
+
+.image-viewer.show {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+
+/* Full-screen image */
+
+.full-screen-image {
+
+    max-width: 95%;
+
+    max-height: 90vh;
+
+    width: auto;
+
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 4px;
+
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.5);
+
+}
+
+
+/* Close button */
+
+.close-viewer {
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 30px;
+
+    width: 50px;
+
+    height: 50px;
+
+    border: none;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    color: white;
+
+    font-size: 35px;
+
+    line-height: 1;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    z-index: 10000;
+
+    transition: 0.3s;
+
+}
+
+
+.close-viewer:hover {
+
+    background: rgba(255, 255, 255, 0.3);
+
+    transform: rotate(90deg);
+
+}
+
+
+/* Prevent page scrolling */
+
+.no-scroll {
+
+    overflow: hidden;
+
+}
+
+
+/* Make gallery images clearly clickable */
+
+.gallery-item img {
+
+    cursor: zoom-in;
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .image-viewer {
+
+        padding: 15px;
+
+    }
+
+    .full-screen-image {
+
+        max-width: 100%;
+
+        max-height: 85vh;
+
+    }
+
+    .close-viewer {
+
+        top: 15px;
+
+        right: 15px;
+
+        width: 45px;
+
+        height: 45px;
+
+        font-size: 30px;
+
+    }
+
+}
