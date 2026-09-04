@@ -886,3 +886,110 @@ footer {
     }
 
 }
+/* =====================================================
+   PACKAGE OF PRACTICES
+===================================================== */
+
+.package {
+    background: #f8f6ef;
+}
+
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.package-card {
+    background: white;
+    border: 1px solid #e0e5dc;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.package-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(30, 70, 40, 0.12);
+}
+
+.package-image {
+    height: 300px;
+    overflow: hidden;
+    background: #edf2eb;
+}
+
+.package-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: zoom-in;
+    transition: 0.4s;
+}
+
+.package-card:hover .package-image img {
+    transform: scale(1.04);
+}
+
+.package-content {
+    padding: 25px;
+}
+
+.package-content span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    color: #9a741d;
+}
+
+.package-content h3 {
+    margin: 7px 0;
+    color: #174b2a;
+    font-size: 22px;
+}
+
+.package-content p {
+    color: #687568;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.view-pop {
+    border: none;
+    background: #174b2a;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 25px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.view-pop:hover {
+    background: #9a741d;
+}
+
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+    .package-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .package-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .package-image {
+        height: 280px;
+    }
+
+}
