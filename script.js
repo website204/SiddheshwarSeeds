@@ -159,3 +159,19 @@ document.addEventListener("keydown", function (event) {
     }
 
 });
+/* =====================================================
+   PACKAGE OF PRACTICES FULL SCREEN VIEWER
+===================================================== */
+
+function openPOP(imagePath) {
+
+    fullScreenImage.src = imagePath;
+
+    fullScreenImage.alt =
+        "Package of Practices";
+
+    imageViewer.classList.add("show");
+
+    document.body.classList.add("no-scroll");
+
+}
